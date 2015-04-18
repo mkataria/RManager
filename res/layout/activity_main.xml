@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textEarnings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textEarnings"
+        android:layout_below="@+id/textEarnings"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnEntry"
+            style="@style/AppBaseTheme"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/entry" 
+            android:onClick="btnEntry_onClick"
+            />
+
+        <Button
+            android:id="@+id/btnCorrection"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/correction" 
+            android:onClick="btnCorrection_onClick"
+            />
+
+      <Button
+          android:id="@+id/btnReport"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:text="@string/report" 
+          android:onClick="btnReport_onClick"
+          />
+
+    <Button
+        android:id="@+id/btnQuit"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/quit" 
+        android:onClick="btnQuit_onClick"
+        />
+
+  </LinearLayout>
+
+
+</RelativeLayout>

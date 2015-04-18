@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Entry" >
+
+    <TextView
+        android:id="@+id/textEntry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:clickable="false"
+        android:text="@string/entry" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="82dp" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="Earnings" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Cash" />
+
+            <EditText
+                android:id="@+id/txtTotalCash"
+                android:layout_width="fill_parent"
+                android:digits="1234567890" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Commission" />
+
+            <EditText
+                android:id="@+id/commission"
+                android:layout_width="fill_parent"
+                android:digits="1234567890" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Recharge" />
+
+            <EditText
+                android:id="@+id/txtRecharge"
+                android:layout_width="fill_parent"
+                android:digits="1234567890" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/txtOther"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="txtOther_onClick"
+                android:text="@string/other" />
+
+            <EditText
+                android:id="@+id/txtOtherEarning"
+                android:layout_width="fill_parent"
+                android:digits="1234567890" />
+        </TableRow>
+    </TableLayout>
+
+    
+    <Button
+        android:id="@+id/txtSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tableLayout1"
+        android:layout_below="@+id/tableLayout1"
+      android:onClick="txtSave_onClick"
+        android:text="Save" />
+
+    
+</RelativeLayout>
